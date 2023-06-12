@@ -10,3 +10,14 @@ const number=function(array){
 
 console.log(number([]))
 console.log(number(['a', 'b', 'c']))
+
+
+// Alternate Solution
+
+
+const numbers=function(array){
+    return array.map((e, i) => `${i + 1}: ${e}`)
+}
+   
+console.log(numbers([]))
+console.log(numbers(['a', 'b', 'c']))
